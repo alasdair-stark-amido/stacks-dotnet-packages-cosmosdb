@@ -2,6 +2,9 @@ version: 2
 updates:
   - package-ecosystem: nuget
     directory: "/src"
+    ignore:
+      - dependency-name: "Microsoft.Extensions.*"
+        versions: ["5.0"]
     schedule:
       interval: daily
       timezone: Europe/London
